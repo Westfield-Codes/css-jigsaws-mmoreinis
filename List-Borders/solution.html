@@ -12,24 +12,52 @@
     /* Add these styles in order */
      
     /* Center the title "High Factor Times Tables */
-
+    h2 {
+      text-align:center;
+    }
     /* Display each table in a row with inline-block */
-    
+    li {
+      display:inline-block;
+    }
     /* Put a rounded (20px) black border box around the timestables div */
-
+    #timestables {
+      border: 2px solid black;
+      border-radius:20px;
+    }
     /* Put a rounded (10px) black border box around each times table */
-    
+    #tables ol {
+      border: 2px solid black;
+      border-radius:10px;
+    }
     /* underline the top numbers red */
-    
+    li h4  {
+      border-bottom: 1px solid red;
+    }
     /* go night mode on hovers over each timestable, but not the parent  */
-  
+    #tables ol:hover {
+      background:black;
+      color:white;
+    }
     /* 20 px space below the last equation in each table */
-
+    ol li ol {
+      padding-bottom:20px;
+    }
     /* add a top margin of 20px on each table, but not the parent */
+    #tables li {
+      margin-top:20px;
+    }
 
+    #tables li li {
+      margin-top:0px;
+    }
      /* subtract 20px from left margins of each child table, add it to the right margins */
-
+     #tables li ol {
+      margin: 0 20px 0 -20px;
+    }
     /* put 25px padding at the bottom of the parent  */
+    #timetables {
+      padding-bottom:25px;
+    }
 
    </style>
 </head>
